@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/modules/TapBox.dart';
+import 'package:flutter_learn/modules/Widgets.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +22,17 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Widgets'),
+        ),
+        body: Container(
+          child: Center(
+            child: Widgets(),
+          ),
+          color: Colors.white,
+        ),
+      )
     );
   }
 }
