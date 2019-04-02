@@ -56,8 +56,12 @@ class _LayoutDemoState extends State<LayoutDemo> {
   List<Widget> childrens() {
     List<Widget> list = List();
 
+    var border = BorderSide(color: Colors.red, width: 1, style: BorderStyle.solid);
+
     for (var i = 0; i < 7; i++) {
-        list.add(Container(width: 80.0, height: 80.0, color: RandomColor().randomColor()));
+        list.add(Container(width: 80.0, height: 80.0, 
+          decoration: BoxDecoration(color: RandomColor().randomColor(), border: Border(top: border, left: BorderSide.none, bottom: border, right: BorderSide.none))
+        ));
     }
     return list;
   }
