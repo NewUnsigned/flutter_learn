@@ -50,7 +50,7 @@ class _LayoutDemoState extends State<LayoutDemo> {
   
   @override
   Widget build(BuildContext context) {
-    return flow();
+    return stack();
   }
 
   List<Widget> childrens() {
@@ -66,6 +66,21 @@ class _LayoutDemoState extends State<LayoutDemo> {
     return list;
   }
 
+  Widget stack() {
+    // ConstrainedBox
+    return ConstrainedBox(
+      constraints: BoxConstraints.expand(),
+      child: Stack(
+        alignment: Alignment.center,
+        children: <Widget>[
+          Container(child: Text('data', style: TextStyle(color: Colors.white)), color: Colors.red),
+          Positioned(left: 18, child: Text('positioined'),),
+          Positioned(top: 18, child: Text('top'),)
+        ],
+      ),
+    );
+  }
+  
   Widget flow() {
     return Flow(
       delegate: TestFlowDelegate(margin: EdgeInsets.all(10.0)),
