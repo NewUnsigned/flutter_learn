@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_learn/modules/TapBox.dart';
 import 'package:flutter_learn/modules/Widgets.dart';
 import 'package:flutter_learn/modules/FormWidget.dart';
+import 'package:flutter_learn/modules/Layout.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           child: Center(
-            child: FormTestRoute(),
+            child: LayoutDemo(),
           ),
           color: Colors.white,
         ),
