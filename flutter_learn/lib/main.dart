@@ -4,8 +4,11 @@ import 'package:flutter_learn/modules/Widgets.dart';
 import 'package:flutter_learn/modules/FormWidget.dart';
 import 'package:flutter_learn/modules/Layout.dart';
 import 'package:flutter_learn/page_list.dart';
+import 'package:flutter_learn/learn/widgets/text.dart';
+import 'package:flutter_learn/learn/widgets/list.dart';
+import 'package:flutter_learn/learn/widgets/layout.dart';
 
-void main() => runApp(MyHomePage());
+void main() => runApp(LayoutWidgets());
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
