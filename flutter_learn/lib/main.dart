@@ -7,8 +7,9 @@ import 'package:flutter_learn/page_list.dart';
 import 'package:flutter_learn/learn/widgets/text.dart';
 import 'package:flutter_learn/learn/widgets/list.dart';
 import 'package:flutter_learn/learn/widgets/layout.dart';
+import 'package:flutter_learn/learn/widgets/navigation.dart';
 
-void main() => runApp(LayoutWidgets());
+void main() => runApp(NavigationDemo());
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
